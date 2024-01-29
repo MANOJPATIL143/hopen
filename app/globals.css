@@ -1,0 +1,104 @@
+/* styles/globals.css */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.container {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: white;
+  width: 1001px;
+  display: flex;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar {
+  background-color: #333;
+  color: #fff;
+  padding: 2px;
+  width: 150px;
+  height: 350px;
+  display:space inline-block;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.sidebar-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sidebar-option img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.sidebar-option span {
+  font-size: 16px;
+}
+
+.sidebar-option:hover {
+  background-color: #555;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  position: start;
+  gap: 10px;
+  margin-bottom: 50px;
+
+}
+
+.suggestions {
+  padding: auto;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.suggestions button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 4px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-align: left;
+  cursor: pointer;
+}
+
+.suggestions button:hover {
+  background-color: #e0e0e0;
+}
